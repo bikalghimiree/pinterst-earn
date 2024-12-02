@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-900;
+}
+
+.masonry-grid {
+  display: flex;
+  width: auto;
+  gap: 1rem;
+}
+
+.masonry-grid_column {
+  background-clip: padding-box;
+}
+
+input::placeholder {
+  @apply text-gray-500;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-red-500 text-white px-4 py-2 rounded-full font-medium hover:bg-red-600 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors;
+}
